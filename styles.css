@@ -120,13 +120,18 @@ h1 {
 li {
   padding: 5px;
 }
-#brk1,
+#brk1, 
 #brk2 {
   display: none;
 }
 
 @media screen and (min-width: 475px) {
   #brk1 {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 719px) {
+  #brk2 {
     display: inline-block;
   }
 }
