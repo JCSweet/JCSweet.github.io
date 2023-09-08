@@ -108,7 +108,6 @@ hr {
 }
 .link,
 .link:visited {
-  display: inline-block;
   text-decoration: none;
   color: #ffffff;
   transition: transform 450ms;
@@ -142,8 +141,8 @@ footer > .link-container {
   text-align: left;
 }
 h1 {
-  font-size: 3rem;
-  line-height: 3.4rem;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
 }
 li {
   padding: 5px;
@@ -157,6 +156,10 @@ li {
 @media screen and (min-width: 475px) {
   #brk1 {
     display: inline-block;
+  }
+  #main,
+  #footer {
+    max-width: 554px;
   }
 }
 @media screen and (min-width: 719px) {
@@ -182,12 +185,19 @@ li {
   #main {
     margin: 220px 0 0 0;
   }
-
+  #main,
+  #footer {
+    max-width: 664px;
+  }
   header > .link-container {
     flex-direction: column;
   }
   #brk2 {
     display: none;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 3.4rem;
   }
 }
 
