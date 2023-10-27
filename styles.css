@@ -136,17 +136,20 @@ li {
 #spc1 {
   display: none;
 }
-#emailPortfolioContainer {
+#emailPortfolioContainer,
+#webPortfolioContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
   margin: 50px 0;
 }
-.emailContainer {
+.emailContainer,
+.webProjectContainer {
   border: 1px solid #333333;
 }
-.emailContainer > a > img {
+.emailContainer > a > img,
+.webProjectContainer > a > img {
   max-height: 225px;
 }
 
