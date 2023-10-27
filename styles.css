@@ -150,7 +150,7 @@ li {
   max-height: 225px;
 }
 
-/* ----- Media Queries ----- */
+/* --------------- Media Queries --------------- */
 @media screen and (min-width: 475px) {
   #brk1 {
     display: inline-block;
