@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Score Keeper</title>
+    <link rel="stylesheet" href="scoreKeeper.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Score Keeper</h1>
+      </div>
+      <div id="score-container">
+        <div id="player1" class="score">
+          <h2 id="p1Display">Player 1</h2>
+          <p id="p1Score" class="scoreDisplay">0</p>
+          <div class="btnContainer">
+            <button id="p1ScoreBtnDown" class="scoreBtn">-1</button>
+            <button id="p1ScoreBtnUp" class="scoreBtn">+1</button>
+          </div>
+        </div>
+        <div id="player2" class="score">
+          <h2 id="p2Display">Player 2</h2>
+          <p id="p2Score" class="scoreDisplay">0</p>
+          <div class="btnContainer">
+            <button id="p2ScoreBtnDown" class="scoreBtn">-1</button>
+            <button id="p2ScoreBtnUp" class="scoreBtn">+1</button>
+          </div>
+        </div>
+      </div>
+      <div id="options" class="optionBtnContainer">
+        <h2 id="winConText"></h2>
+        <select name="winCon" id="winConSelect" onchange="winConn(value)">
+          <option disabled selected>Winning Score</option>
+          <option value="">Infinite Play</option>
+        </select>
+        <button id="resetBtn" class="optionBtn">Reset</button>
+      </div>
+    </div>
+    <script src="scoreKeeper.js"></script>
+  </body>
+</html>
