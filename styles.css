@@ -144,19 +144,22 @@ li {
   gap: 50px;
   margin: 50px 0;
 }
-.emailContainer,
-.webProjectContainer {
-  border: 1px solid #333333;
+.emailContainer > h3,
+.webProjectContainer > h3 {
+  text-align: center;
+  margin: 1rem;
 }
 .emailContainer > a > img {
   max-height: 225px;
   max-width: 132px;
   width: 100%;
+  border: 1px solid #333333;
 }
 .webProjectContainer > a > img {
   max-height: 225px;
   max-width: 338px;
   width: 100%;
+  border: 1px solid #333333;
 }
 
 /* --------------- Media Queries --------------- */
