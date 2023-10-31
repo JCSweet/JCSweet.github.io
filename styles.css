@@ -148,9 +148,14 @@ li {
 .webProjectContainer {
   border: 1px solid #333333;
 }
-.emailContainer > a > img,
+.emailContainer > a > img {
+  max-height: 225px;
+  max-width: 132px;
+  width: 100%;
+}
 .webProjectContainer > a > img {
   max-height: 225px;
+  max-width: 338px;
   width: 100%;
 }
 
