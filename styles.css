@@ -125,7 +125,7 @@ footer > .link-container {
   text-align: left;
 }
 h1 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.7rem;
 }
 li {
@@ -163,16 +163,40 @@ li {
 }
 
 /* --------------- Media Queries --------------- */
-@media screen and (min-width: 315px) {
+@media screen and (min-width: 280px) {
   #brk1,
   #brk2 {
     display: inline-block;
+  }
+}
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+}
+@media screen and (min-width: 340px) {
+  h1 {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
   }
 }
 @media screen and (min-width: 375px) {
   h1 {
     font-size: 1.5rem;
     line-height: 1.9rem;
+  }
+}
+@media screen and (min-width: 400px) {
+  h1 {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+}
+@media screen and (min-width: 440px) {
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
   }
 }
 @media screen and (min-width: 475px) {
