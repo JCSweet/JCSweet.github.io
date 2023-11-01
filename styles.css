@@ -185,7 +185,7 @@ li {
     line-height: 1.7rem;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 380px) {
   h1 {
     font-size: 1.4rem;
     line-height: 1.9rem;
