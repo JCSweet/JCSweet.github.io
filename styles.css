@@ -125,8 +125,12 @@ footer > .link-container {
   text-align: left;
 }
 h1 {
-  font-size: 1.1rem;
-  line-height: 1.7rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 li {
   padding: 5px;
@@ -171,19 +175,19 @@ li {
 }
 @media screen and (min-width: 320px) {
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.7rem;
   }
 }
 @media screen and (min-width: 340px) {
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.7rem;
   }
 }
 @media screen and (min-width: 375px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.9rem;
   }
 }
@@ -197,6 +201,10 @@ li {
   h1 {
     font-size: 1.8rem;
     line-height: 2.3rem;
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: 3.8rem;
   }
 }
 @media screen and (min-width: 475px) {
