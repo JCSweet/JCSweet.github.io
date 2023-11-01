@@ -125,8 +125,8 @@ footer > .link-container {
   text-align: left;
 }
 h1 {
-  font-size: 2.5rem;
-  line-height: 2.9rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 li {
   padding: 5px;
@@ -163,18 +163,34 @@ li {
 }
 
 /* --------------- Media Queries --------------- */
-@media screen and (min-width: 475px) {
-  #brk1 {
+@media screen and (min-width: 315px) {
+  #brk1,
+  #brk2 {
     display: inline-block;
   }
+}
+@media screen and (min-width: 375px) {
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+@media screen and (min-width: 475px) {
   #main,
   #footer {
     max-width: 554px;
   }
 }
-@media screen and (min-width: 719px) {
-  #brk2 {
-    display: inline-block;
+@media screen and (min-width: 484px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 2.9rem;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
@@ -213,7 +229,7 @@ li {
   }
   h1 {
     font-size: 3rem;
-    line-height: 3.4rem;
+    line-height: 3.5rem;
   }
 }
 
