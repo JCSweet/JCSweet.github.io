@@ -1,6 +1,14 @@
+
+#dis_table .copyToggle {
+    color: #333333;
+}
 .darkBgToggle {
-    background-color: #000 !important;
+    background-color: #000000 !important;
   }
 .darkCopyToggle {
+    color: #ffffff !important;
+    text-decoration-color: #ffffff !important;
+}
+.darkCopyToggle a {
     color: #ffffff !important;
 }

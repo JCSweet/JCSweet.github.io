@@ -96,7 +96,7 @@ td {
   color: #910D22 !important;
 }
 #dis_table a {
-  color: #1C1B1A !important;
+  /* color: #1C1B1A !important; */
   font-weight: bold !important;
   font-family: 'FallMedium', Arial, Helvetica, sans-serif !important;
 }
@@ -485,12 +485,12 @@ u + .body .gmail-difference {
   .mobileOnly {display: inline-block !important;}
 }
 </style>
-
+<link rel="stylesheet" href="emailSpecial.css" />
   </head>
   
-  <body class="body" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;margin: 0;padding: 0;background-color: #FFFFFF;">
+  <body class="body bgToggle" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;margin: 0;padding: 0;background-color: #FFFFFF;">
     <!-- START BACKGROUND WRAPPER -->
-    <table id="bodyTable" border="0" align="center" cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;margin: 0;padding: 0;background-color: #FFFFFF;height: 100% !important;width: 100% !important;">
+    <table class="bgToggle" id="bodyTable" border="0" align="center" cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;margin: 0;padding: 0;background-color: #FFFFFF;height: 100% !important;width: 100% !important;">
      <tr>
       <td valign="top" style="border-collapse: collapse;">
 
@@ -503,6 +503,7 @@ u + .body .gmail-difference {
 
 
 <!-- ---------------------------------------------- //VARIABLES ---------------------------------------------- -->
+<div><button onclick="darkModeToggle()">Toggle Dark Mode</button></div>
 <!-- ---------------------------------------------- EMAIL HEADER ---------------------------------------------- -->
 <!-- PREHEADER -->
 <!-- START PREHEADER -->
@@ -512,7 +513,7 @@ u + .body .gmail-difference {
 </tr>
 <tr>
 <td class="text_left copy" valign="top" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;text-align: left;font-size: 12px;color: #1C1B1A;"><!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
-<a alias="pre_phcta" conversion="true" data-linkto="other" href="https://www.myrocket.com/debt-consolidation?utm_campaign=RTTInactiveJourney&utm_medium=email&utm_source=SFMCRL&utm_content=Multiproduct&utm_audience=LPDebtEq&c=EMEM_RTTIJDebtEqMultiproduct&p=RLLD_SFMCRL&qls=EGL_DebEquRL.multiprodu&utm_cta=phlink" title="See your options to take control of it." style="color: #1C1B1A;"><strong style="color: #1C1B1A; font-weight: normal;">See your options to take control of it.</strong></a>
+<a class="copyToggle" alias="pre_phcta" conversion="true" data-linkto="other" href="https://www.myrocket.com/debt-consolidation?utm_campaign=RTTInactiveJourney&utm_medium=email&utm_source=SFMCRL&utm_content=Multiproduct&utm_audience=LPDebtEq&c=EMEM_RTTIJDebtEqMultiproduct&p=RLLD_SFMCRL&qls=EGL_DebEquRL.multiprodu&utm_cta=phlink" title="See your options to take control of it." style="color: #1C1B1A;"><strong  class="copyToggle" style="color: #1C1B1A; font-weight: normal;">See your options to take control of it.</strong></a>
 <!--[if (!mso 9)&(!mso 14) ]></span><![endif]-->
 </td>
 <td valign="top" style="font-size: 0; display: none; visibility: hidden; height: 0; color: #FFFFFF;line-height: 0; mso-line-height-rule:exactly; border-collapse:
@@ -520,7 +521,7 @@ collapse;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw
 &zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
 &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
 &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</td>
-<td class="text_right copy" valign="top" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;text-align: right;font-size: 12px;color: #1C1B1A;"><!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]--><a alias="pre_viewonline" conversion="true" data-linkto="other" href="https://view.e.rocketloans.com/?qs=0538b2e58a024f18a9d4558e28bcbc9253f66d770613f6d81ab63a7cfa123531f6c5f24e96df9f0368f329d5fa937e16f6f82697580df6a3de7a5c7fc689c2d570fa6e78187cc462" style="color: #1C1B1A;"><strong style="color: #1C1B1A;font-weight: normal;">View Online</strong></a><!--[if (!mso 9)&(!mso 14) ]></span><![endif]--></td>
+<td class="text_right copy" valign="top" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;text-align: right;font-size: 12px;color: #1C1B1A;"><!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]--><a class="copyToggle" alias="pre_viewonline" conversion="true" data-linkto="other" href="https://view.e.rocketloans.com/?qs=0538b2e58a024f18a9d4558e28bcbc9253f66d770613f6d81ab63a7cfa123531f6c5f24e96df9f0368f329d5fa937e16f6f82697580df6a3de7a5c7fc689c2d570fa6e78187cc462" style="color: #1C1B1A;"><strong class="copyToggle" style="color: #1C1B1A;font-weight: normal;">View Online</strong></a><!--[if (!mso 9)&(!mso 14) ]></span><![endif]--></td>
 </tr>
 <tr>
 <td colspan="3" valign="top" class="height3" style="border-collapse: collapse;height: 3px;font-size: 3px;line-height: 3px;mso-line-height-rule: exactly;">&nbsp;</td>
@@ -580,11 +581,11 @@ collapse;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw
                   style="font-family: 'FallSansMedium', Arial, Helvetica, sans-serif; font-size: 12px; color: #1C1B1A; text-transform: uppercase; text-align: center; border-collapse: collapse;">
                 <!--[if (!mso 9)&(!mso 14)><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
                 <a
-                   alias="nav1" conversion="true" data-linkto="other"
+                class="copyToggle" alias="nav1" conversion="true" data-linkto="other"
                    href="https://www.rocketloans.com/learn/personal-loan-basics?utm_campaign=RTTInactiveJourney&utm_medium=email&utm_source=SFMCRL&utm_content=Multiproduct&utm_audience=LPDebtEq&c=EMEM_RTTIJDebtEqMultiproduct&p=RLLD_SFMCRL&qls=EGL_DebEquRL.multiprodu&utm_cta=nav-basics"
                    title="Personal Loan Basics"
                    style="color: #1C1B1A; text-decoration: none;"><strong
-                                                                          style="color: #1C1B1A;">Personal Loan Basics</strong></a>
+                                                                          style="color: #1C1B1A;" class="copyToggle">Personal Loan Basics</strong></a>
                 <!--[if (!mso 9)&(!mso 14)></span><![endif]-->
               </td>
             </tr>
@@ -595,7 +596,7 @@ collapse;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw
               </td>
             </tr>
             <tr>
-              <td class="underline_hover" valign="top"
+              <td class="underline_hover copyToggle bgToggle" valign="top"
                   style="height: 2px; font-size: 2px; line-height: 2px; mso-line-height-rule: auto; border-collapse: collapse; color: #1C1B1A; background-color: #1C1B1A;">
                 &nbsp;
               </td>
@@ -611,11 +612,11 @@ collapse;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw
                   style="font-family: 'FallSansMedium', Arial, Helvetica, sans-serif; font-size: 12px; color: #1C1B1A; text-transform: uppercase; text-align: center; border-collapse: collapse;">
                 <!--[if (!mso 9)&(!mso 14)><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
                 <a
-                   alias="nav2" conversion="true" data-linkto="other"
+                class="copyToggle" alias="nav2" conversion="true" data-linkto="other"
                    href="https://www.rocketloans.com/learn/explore-your-options/what-is-debt-consolidation-(and-does-it-make-sense-for-you)?utm_campaign=RTTInactiveJourney&utm_medium=email&utm_source=SFMCRL&utm_content=Multiproduct&utm_audience=LPDebtEq&c=EMEM_RTTIJDebtEqMultiproduct&p=RLLD_SFMCRL&qls=EGL_DebEquRL.multiprodu&utm_cta=nav-dc"
                    title="Debt Consolidation"
                    style="color: #1C1B1A; text-decoration: none;"><strong
-                                                                          style="color: #1C1B1A;">Debt Consolidation</strong></a>
+                                                                          style="color: #1C1B1A;" class="copyToggle">Debt Consolidation</strong></a>
                 <!--[if (!mso 9)&(!mso 14)></span><![endif]-->
               </td>
             </tr>
@@ -626,7 +627,7 @@ collapse;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw
               </td>
             </tr>
             <tr>
-              <td class="underline_hover" valign="top"
+              <td class="underline_hover copyToggle bgToggle" valign="top"
                   style="height: 2px; font-size: 2px; line-height: 2px; mso-line-height-rule: auto; border-collapse: collapse; color: #1C1B1A; background-color: #1C1B1A;">
                 &nbsp;
               </td>
@@ -658,11 +659,11 @@ collapse;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw
                   style="font-family: 'FallSansMedium', Arial, Helvetica, sans-serif; font-size: 12px; color: #1C1B1A; text-transform: uppercase; text-align: center; border-collapse: collapse;">
                 <!--[if (!mso 9)&(!mso 14)><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
                 <a
-                   alias="nav3" conversion="true" data-linkto="other"
+                class="copyToggle" alias="nav3" conversion="true" data-linkto="other"
                    href="https://www.rocketloans.com/learn/explore-your-options/personal-loan-for-home-improvement?utm_campaign=RTTInactiveJourney&utm_medium=email&utm_source=SFMCRL&utm_content=Multiproduct&utm_audience=LPDebtEq&c=EMEM_RTTIJDebtEqMultiproduct&p=RLLD_SFMCRL&qls=EGL_DebEquRL.multiprodu&utm_cta=nav-hi"
                    title="Home Improvement"
                    style="color: #1C1B1A; text-decoration: none;"><strong
-                                                                          style="color: #1C1B1A;">Home Improvement</strong></a>
+                                                                          style="color: #1C1B1A;" class="copyToggle">Home Improvement</strong></a>
                 <!--[if (!mso 9)&(!mso 14)></span><![endif]-->
               </td>
             </tr>
@@ -673,7 +674,7 @@ collapse;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw
               </td>
             </tr>
             <tr>
-              <td class="underline_hover" valign="top"
+              <td class="underline_hover copyToggle bgToggle" valign="top"
                   style="height: 2px; font-size: 2px; line-height: 2px; mso-line-height-rule: auto; border-collapse: collapse; color: #1C1B1A; background-color: #1C1B1A;">
                 &nbsp;
               </td>
@@ -734,7 +735,7 @@ collapse;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zw
       <table class="resize700" width="700" border="0" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;margin: 0 auto;width: 700px;">
        <tr>
         <td valign="top" class="mob_width20" style="border-collapse: collapse;width: 50px;">&nbsp;</td>
-        <td valign="top" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 17px;color: #1C1B1A;line-height: 26px;"><!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
+        <td valign="top" class="copyToggle" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 17px;color: #1C1B1A;line-height: 26px;"><!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
 Hi {Client},
 <br />
 <br />
@@ -758,7 +759,7 @@ If you have credit card debt, car loans or any other bills that you're looking t
     <!-- Row 1 -->
     <table class="resize600" width="530" border="0" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;margin: 0 auto;width: 530px;">
       <tr>
-        <td valign="top" align="center" class="" style="border-collapse: collapse;font-family: 'FallSansMedium', Arial, Helvetica, sans-serif;font-size: 25px;color: #1C1B1A;line-height: 30px; font-weight: bold;">
+        <td valign="top" align="center" class="copyToggle" style="border-collapse: collapse;font-family: 'FallSansMedium', Arial, Helvetica, sans-serif;font-size: 25px;color: #1C1B1A;line-height: 30px; font-weight: bold;">
           <!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
           <strong>Home Equity Loan<sup style="font-size: .6em !important; line-height: 0; text-decoration: none!important;">1</sup> From Rocket&nbsp;Mortgage<sup style="line-height: 0px;">&reg;</sup>
           </strong>
@@ -781,7 +782,7 @@ If you have credit card debt, car loans or any other bills that you're looking t
         </td>
       </tr>
       <tr>
-        <td valign="top" align="center" width="479" class="resize600" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 16px;color: #1C1B1A;line-height: 24px; width: 479px;">
+        <td valign="top" align="center" width="479" class="resize600 copyToggle" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 16px;color: #1C1B1A;line-height: 24px; width: 479px;">
           <!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
           Get cash on hand to consolidate debt without having to refinance your mortgage. Plus, you can keep your same low interest rate on your first mortgage.
           <!--[if (!mso 9)&(!mso 14) ]></span><![endif]-->
@@ -843,7 +844,7 @@ If you have credit card debt, car loans or any other bills that you're looking t
     <!-- Row 2 -->
     <table class="resize600" width="530" border="0" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;margin: 0 auto;width: 530px;">
       <tr>
-        <td valign="top" align="center" class="" style="border-collapse: collapse;font-family: 'FallSansMedium', Arial, Helvetica, sans-serif;font-size: 25px;color: #1C1B1A;line-height: 30px; font-weight: bold;">
+        <td valign="top" align="center" class="copyToggle" style="border-collapse: collapse;font-family: 'FallSansMedium', Arial, Helvetica, sans-serif;font-size: 25px;color: #1C1B1A;line-height: 30px; font-weight: bold;">
           <!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
           <strong>Personal Loan From Rocket&nbsp;Loans<sup style="line-height: 0px;">&#8480;</sup></strong>
           <!--[if (!mso 9)&(!mso 14) ]></span><![endif]-->
@@ -865,7 +866,7 @@ If you have credit card debt, car loans or any other bills that you're looking t
         </td>
       </tr>
       <tr>
-        <td valign="top" align="center" width="479" class="resize600" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 16px;color: #1C1B1A;line-height: 24px; width: 479px;">
+        <td valign="top" align="center" width="479" class="resize600 copyToggle" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 16px;color: #1C1B1A;line-height: 24px; width: 479px;">
           <!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
           Combine multiple credit card bills or any existing debt into one fixed monthly payment.
           <!--[if (!mso 9)&(!mso 14) ]></span><![endif]-->
@@ -927,7 +928,7 @@ If you have credit card debt, car loans or any other bills that you're looking t
     <!-- Row 3 -->
     <table class="resize600" width="530" border="0" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;margin: 0 auto;width: 530px;">
       <tr>
-        <td valign="top" align="center" class="" style="border-collapse: collapse;font-family: 'FallSansMedium', Arial, Helvetica, sans-serif;font-size: 25px;color: #1C1B1A;line-height: 30px; font-weight: bold;">
+        <td valign="top" align="center" class="copyToggle" style="border-collapse: collapse;font-family: 'FallSansMedium', Arial, Helvetica, sans-serif;font-size: 25px;color: #1C1B1A;line-height: 30px; font-weight: bold;">
           <!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
           <strong>Cash-Out Refinance From Rocket&nbsp;Mortgage<sup style="line-height: 0px;">&reg;</sup></strong>
           <!--[if (!mso 9)&(!mso 14) ]></span><![endif]-->
@@ -949,7 +950,7 @@ If you have credit card debt, car loans or any other bills that you're looking t
         </td>
       </tr>
       <tr>
-        <td valign="top" align="center" width="479" class="resize600" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 16px;color: #1C1B1A;line-height: 24px; width: 479px;">
+        <td valign="top" align="center" width="479" class="resize600 copyToggle" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 16px;color: #1C1B1A;line-height: 24px; width: 479px;">
           <!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
           Take cash out of your home’s equity to consolidate and pay off high-interest debt.
           <!--[if (!mso 9)&(!mso 14) ]></span><![endif]-->
@@ -1026,7 +1027,7 @@ If you have credit card debt, car loans or any other bills that you're looking t
   </td>
 </tr>
 <tr>
-  <td valign="top" class="mq500_padding" align="center" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 16px; line-height: 24px; color: #ffffff; padding: 0 50px;">
+  <td valign="top" class="mq500_padding copyToggle" align="center" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 16px; line-height: 24px; color: #ffffff; padding: 0 50px;">
     <div class="gmail-screen">
       <div class="gmail-difference">
         <!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]--> 
@@ -1063,7 +1064,7 @@ If you have credit card debt, car loans or any other bills that you're looking t
                     <!-- START HEADLINE -->
          <table class="width100p headline" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;width: 100%;">
           <tr>
-           <td align="center"valign="top" class="headline2_style" style="border-collapse: collapse;font-family: 'FallSansMedium', Arial, Helvetica, sans-serif;color: #1C1B1A;font-weight: bold;text-align: center;font-size: 26px;line-height: 35px; margin:0 auto;"><!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->Follow Us             <!--[if (!mso 9)&(!mso 14) ]></span><![endif]-->
+           <td align="center"valign="top" class="headline2_style copyToggle" style="border-collapse: collapse;font-family: 'FallSansMedium', Arial, Helvetica, sans-serif;color: #1C1B1A;font-weight: bold;text-align: center;font-size: 26px;line-height: 35px; margin:0 auto;"><!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->Follow Us             <!--[if (!mso 9)&(!mso 14) ]></span><![endif]-->
            </td>
           </tr>
          </table>
@@ -1118,7 +1119,7 @@ If you have credit card debt, car loans or any other bills that you're looking t
                             <td class="copy" valign="middle" align="center" height="30"
                               style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 15px;color: #333333;line-height: 30px;margin: 0 auto;height: 30px;vertical-align: middle;">
                               <!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
-                              <a href="https://www.trustpilot.com/review/rocketloans.com"
+                              <a class="copyToggle" href="https://www.trustpilot.com/review/rocketloans.com"
                                 target="_blank" title="Trustpilot Reviews"
                                 style="text-decoration: none; color: #333333;"><strong>Excellent</strong></a>
                               <!--[if (!mso 9)&(!mso 14) ]></span><![endif]-->
@@ -1159,7 +1160,7 @@ If you have credit card debt, car loans or any other bills that you're looking t
                             <td class="copy" valign="middle" align="center" height="30"
                               style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 15px;color: #333333;line-height: 30px;margin: 0 auto;height: 30px;vertical-align: middle;">
                               <!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
-                              <a href="https://www.trustpilot.com/review/rocketloans.com"
+                              <a class="copyToggle" href="https://www.trustpilot.com/review/rocketloans.com"
                                 target="_blank" title="Trustpilot Reviews"
                                 style="text-decoration: none; color: #333333;">based&nbsp;on&nbsp;<strong>4,878</strong>&nbsp;reviews</a>
                               <!--[if (!mso 9)&(!mso 14) ]></span><![endif]-->
@@ -1202,10 +1203,10 @@ If you have credit card debt, car loans or any other bills that you're looking t
 <!-- ---------------------------------------------- //EMAIL BODY ---------------------------------------------- -->
 
       <!-- START DISCLAIMER -->
-      <table id="dis_table" class="resize700" width="700" border="0" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;margin: 0 auto;width: 700px;">
+      <table id="dis_table" class="resize700 copyToggle" width="700" border="0" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;margin: 0 auto;width: 700px;">
        <tr>
         <td valign="top" class="mob_width20" style="border-collapse: collapse; width: 50px;">&nbsp;</td>
-        <td valign="top" class="copy" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 10px;color: #1C1B1A;text-align: justify;line-height: 14px;"><!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
+        <td valign="top" class="copy copyToggle" style="border-collapse: collapse;font-family: 'FallSansRegular', Arial, Helvetica, sans-serif;font-size: 10px;color: #1C1B1A;text-align: justify;line-height: 14px;"><!--[if (!mso 9)&(!mso 14) ]><span style="font-family: Arial, Helvetica, sans-serif;"><![endif]-->
 <sup style="font-size: .6em !important; line-height: 0; text-decoration: none!important;">1</sup>Home Equity Loan product requires full documentation of income and assets, credit score and Max LTV/CLTV/HCLTV. Requirements are tiered as follows: 680 minimum FICO with a max LTV/CLTV/HCLTV of 75%, 700 minimum FICO with a max LTV/CLTV/HCLTV of 85%, and 760 minimum FICO with a max LTV/CLTV/HCLTV of 90%. Your debt-to-income ratio (DTI) must be 45% or below. Valid for loan amounts between $45,000.00 and $350,000.00 (minimum loan amount for properties located in Iowa is $61,000). Product is a second standalone lien and may not be used for piggyback transactions. To qualify for these loan programs, you must be the age of majority in your state with a valid U.S. residency. Product not available on Schwab products. Guidelines may vary for self-employed individuals. Some mortgages may be
 considered “Higher Priced” based on the APOR spread test. Higher Priced loans are not allowed on properties located in New York. Formal approval will be subject to satisfactory verification of income, assets, credit, property condition and value. Additional restrictions apply. Not available in Texas.
 <br />
@@ -1215,7 +1216,7 @@ Rocket Mortgage, LLC, and RockLoans Marketplace LLC (doing business as Rocket Lo
 <br />
 <br />
 <!-- RM NMLS DIS -->
-Rocket Mortgage, LLC; NMLS #3030; <a alias="dis_NMLS" conversion="true" data-linkto="other" href="http://www.nmlsconsumeraccess.org" target="_blank">www.NMLSConsumerAccess.org
+Rocket Mortgage, LLC; NMLS #3030; <a class="copyToggle" alias="dis_NMLS" conversion="true" data-linkto="other" href="http://www.nmlsconsumeraccess.org" target="_blank">www.NMLSConsumerAccess.org
 </a>. Equal Housing Lender. Licensed in 50 states. AL License No. MC 20979, Control No. 100152352. AR, TX: 1050 Woodward Ave., Detroit, MI 48226-1906, (888) 474-0404; AZ: 1 N. Central Ave., Ste. 2000, Phoenix, AZ 85004, Mortgage Banker License #BK-0902939; CA: Licensed by the Department of Financial Protection and Innovation under the California Residential Mortgage Lending Act; CO: Regulated by the Division of Real Estate; GA: Residential Mortgage Licensee #11704; IL: Residential Mortgage Licensee #4127 – Dept. of Financial and Professional Regulation; KS: Licensed Mortgage Company MC.0025309; MA: Mortgage Lender License #ML 3030; ME: Supervised Lender License; MN: Not an offer for a rate lock agreement; MS: Licensed by the MS Dept. of Banking and Consumer Finance; NH: Licensed by the NH
 Banking Dept., #6743MB; NV: License #626; NJ: New Jersey – Rocket Mortgage, LLC, 1050 Woodward Ave., Detroit, MI 48226, (888) 474-0404, Licensed by the N.J. Department of Banking and Insurance.; NY: Rocket Mortgage, LLC, 1050 Woodward Ave., Detroit, MI 48226 Licensed Mortgage Banker-NYS Department of Financial Services; OH: MB 850076; OR: License #ML-1387; PA: Licensed by the Dept. of Banking – License #21430; RI: Licensed Lender; WA: Consumer Loan Company License CL-3030. Conditions may apply.
 <br /><br />
@@ -1226,14 +1227,14 @@ Rocket Mortgage, 1050 Woodward Ave., Detroit, MI 48226-1906
 <br />
 <br />
 <!-- TERMS & CONDITIONS DIS -->
-All personal loans are made by Cross River Bank, a New Jersey state chartered commercial bank, Member FDIC, Equal Housing Lender. All loans are unsecured, fully amortizing personal loans. Eligibility for a loan is not guaranteed. Please refer to our <a alias="dis_rl_license" conversion="true" data-linkto="other" href="https://www.rocketloans.com/disclosures-and-licenses" target="_blank" class="rlDiscLink" style="text-decoration: underline;" title="Disclosures and Licenses">Disclosures and Licenses</a> page for state-required disclosures, licenses, and lending restrictions.
+All personal loans are made by Cross River Bank, a New Jersey state chartered commercial bank, Member FDIC, Equal Housing Lender. All loans are unsecured, fully amortizing personal loans. Eligibility for a loan is not guaranteed. Please refer to our <a alias="dis_rl_license" conversion="true" data-linkto="other" href="https://www.rocketloans.com/disclosures-and-licenses" target="_blank" class="rlDiscLink copyToggle" style="text-decoration: underline;" title="Disclosures and Licenses">Disclosures and Licenses</a> page for state-required disclosures, licenses, and lending restrictions.
 <br /><br />
 Borrower must be a U.S. citizen or permanent U.S. resident alien at least 18 years of age. All loan applications are subject to credit review and approval. Offered loan terms depend upon your credit profile, requested amount, requested loan term, credit usage, credit history and other factors. Not all borrowers receive the lowest interest rate. To qualify for the lowest rate, you must have excellent credit, meet certain conditions, and select autopay. Rates and Terms are subject to change at any time without notice.
 <br /><br />
-Please refer to our <a alias="dis_rl_terms" conversion="true" data-linkto="other" href="https://www.rocketloans.com/app#/terms-of-service" target="_blank" class="rlDiscLink" style="text-decoration: underline;" title="Terms of Use">Terms of Use</a> for additional terms and conditions, and please refer to <a alias="dis_rl_privacy" conversion="true" data-linkto="other" href="https://static.rocketloans.com/disclosures/our-privacy-notice.pdf" target="_blank" class="rlDiscLink" style="text-decoration: underline;" title="Rocket Loans' Privacy Notice">Rocket Loans' Privacy Notice</a> and 
-<a alias="dis_rl_cr_privacy" conversion="true" data-linkto="other" href="https://static.rocketloans.com/disclosures/bank-privacy-notice.pdf" target="_blank" class="rlDiscLink" style="text-decoration: underline;" title="Cross River's Privacy Notice">Cross River's Privacy Notice</a> to learn more about what we do with your personal information. 
+Please refer to our <a alias="dis_rl_terms" conversion="true" data-linkto="other" href="https://www.rocketloans.com/app#/terms-of-service" target="_blank" class="rlDiscLink copyToggle" style="text-decoration: underline;" title="Terms of Use">Terms of Use</a> for additional terms and conditions, and please refer to <a alias="dis_rl_privacy" conversion="true" data-linkto="other" href="https://static.rocketloans.com/disclosures/our-privacy-notice.pdf" target="_blank" class="rlDiscLink copyToggle" style="text-decoration: underline;" title="Rocket Loans' Privacy Notice">Rocket Loans' Privacy Notice</a> and 
+<a alias="dis_rl_cr_privacy" conversion="true" data-linkto="other" href="https://static.rocketloans.com/disclosures/bank-privacy-notice.pdf" target="_blank" class="rlDiscLink copyToggle" style="text-decoration: underline;" title="Cross River's Privacy Notice">Cross River's Privacy Notice</a> to learn more about what we do with your personal information. 
 <br /><br />
-To no longer receive emails from Rocket Loans, <a alias="dis_rl_unsub" conversion="true" data-linkto="other" href="https://www.rocketloans.com/app#/unsubscribe" target="_blank" class="rlDiscLink" style="text-decoration: underline;" title="">unsubscribe here</a>.
+To no longer receive emails from Rocket Loans, <a alias="dis_rl_unsub" conversion="true" data-linkto="other" href="https://www.rocketloans.com/app#/unsubscribe" target="_blank" class="rlDiscLink copyToggle" style="text-decoration: underline;" title="">unsubscribe here</a>.
 <br /><br />
 
 <!-- RL ADDRESS & EHL LOGO -->
@@ -1254,6 +1255,8 @@ RockLoans Marketplace LLC dba Rocket Loans dba RocketLoans | 1274 Library Street
     </tr>
    </table>
    <!-- END BACKGROUND WRAPPER -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="emailSpecialDark.js" charset="utf-8"></script>
  </body>
 
 </html>
