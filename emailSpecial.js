@@ -1,6 +1,6 @@
 
-// *On load default to dark mode* 
-$( window ).on( "load", darkModeToggle());
+// *On load default to dark mode - add to applicable HTML file to enable behavior* 
+// $( window ).on( "load", darkModeToggle());
 
 
 // *Dark mode toggle*
