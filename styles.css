@@ -5,13 +5,13 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #aa5656;
   color: #ffffff;
-  /* height: 80vh; */
   display: flex;
   justify-content: center;
 }
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -76,6 +76,14 @@ hr {
 .icon {
   transition: transform 450ms;
 }
+.clickable:hover,
+.clickable:active {
+  transform: scale(1.1);
+  transition: transform 250ms;
+}
+.clickable {
+  transition: transform 450ms;
+}
 .button-container {
   display: flex;
   justify-content: flex-start;
@@ -112,13 +120,13 @@ hr {
   display: flex;
   font-size: 1rem;
 }
-.link-container > a {
+.link-container a {
   padding: 10px;
 }
-header > .link-container {
+header .link-container {
   justify-content: flex-end;
 }
-footer > .link-container {
+footer .link-container {
   flex-direction: column;
   align-items: flex-end;
   width: max-content;
@@ -129,8 +137,16 @@ h1 {
   line-height: 1.6rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+h3 {
+  font-size: 1.7rem;
   line-height: 2.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 li {
   padding: 5px;
@@ -146,26 +162,40 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
-  margin: 50px 0;
+  margin: 20px 0 50px 0;
 }
-.emailContainer > h3,
-.webProjectContainer > h3 {
+.emailContainer,
+.webProjectContainer {
+  text-align: center;
+}
+.emailContainer h3,
+.webProjectContainer h3 {
   text-align: center;
   margin: 1rem;
 }
-.emailContainer > a > img {
+.emailContainer a img,
+.webProjectContainer a img {
+  border: 1px solid #333333;
+  border-radius: 2%;
+  width: 100%;
+}
+.emailContainer a img {
   max-height: 225px;
   max-width: 132px;
-  width: 100%;
-  border: 1px solid #333333;
 }
-.webProjectContainer > a > img {
+.webProjectContainer a img {
   max-height: 225px;
   max-width: 338px;
-  width: 100%;
-  border: 1px solid #333333;
 }
-
+.sectionTitle {
+  text-align: center;
+}
+.subTitle {
+  text-align: center;
+}
+.textDiv {
+  margin-bottom: 50px;
+}
 /* --------------- Media Queries --------------- */
 @media screen and (min-width: 280px) {
   #brk1,
@@ -212,6 +242,11 @@ li {
     font-size: 3rem;
     line-height: 3.8rem;
   }
+  h3 {
+    font-size: 2.7rem;
+    line-height: 3.2rem;
+  }
+
 }
 @media screen and (min-width: 475px) {
   #main,
@@ -219,10 +254,15 @@ li {
     max-width: 554px;
   }
 }
-@media screen and (min-width: 484px) {
+@media screen and (min-width: 490px) {
   h1 {
     font-size: 2rem;
     line-height: 2.4rem;
+  }
+  .emailContainer > a > img {
+    max-height: 337px;
+    max-width: 198px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 600px) {
@@ -268,6 +308,11 @@ li {
   h1 {
     font-size: 3rem;
     line-height: 3.5rem;
+  }
+  .emailContainer > a > img {
+    max-height: 500px;
+    max-width: 264px;
+    width: 100%;
   }
 }
 
