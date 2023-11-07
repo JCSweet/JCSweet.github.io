@@ -196,7 +196,26 @@ li {
 .textDiv {
   margin-bottom: 50px;
 }
+#carouselOuterContainer {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+#carouselSizeContainer {
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.carousel-indicators {
+  background-color: #686868;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+background-color: #686868;
+border-radius: 20%;
+  }
+
 /* --------------- Media Queries --------------- */
+
 @media screen and (min-width: 280px) {
   #brk1,
   #brk2 {
@@ -253,6 +272,9 @@ li {
   #footer {
     max-width: 554px;
   }
+  #carouselSizeContainer {
+    width: 80%;
+  }
 }
 @media screen and (min-width: 490px) {
   h1 {
@@ -269,6 +291,9 @@ li {
   h1 {
     font-size: 2.5rem;
     line-height: 2.9rem;
+  }
+  #carouselSizeContainer {
+    width: 60%;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
