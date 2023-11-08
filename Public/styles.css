@@ -68,13 +68,16 @@ hr {
 .hr-top {
   border-top: 1px solid;
   border-bottom: 3px solid;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .hr-bottom {
   border-top: 3px solid;
   border-bottom: 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .hr-center {
   border-bottom: 2px solid;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .icon:hover,
 .icon:active {
@@ -89,6 +92,7 @@ hr {
   justify-content: flex-start;
   gap: 25px;
   margin: 20px 0;
+  
 }
 .button {
   display: inline-block;
@@ -173,15 +177,20 @@ li {
 }
 #carouselSizeContainer {
   width: 90%;
+  border-radius: 1%;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .carousel-indicators {
   background-color: #686868;
+  opacity: 90%;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: #686868;
   border-radius: 20%;
+}
+.carousel-item a img {
+  border-radius: 1%;
 }
 /* //Email Marketing Page */
 /* Web Projects Page  */
