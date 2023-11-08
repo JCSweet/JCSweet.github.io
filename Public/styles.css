@@ -213,7 +213,9 @@ li {
 background-color: #686868;
 border-radius: 20%;
   }
-
+.featurette-img {
+  max-width: 300px;
+}
 /* --------------- Media Queries --------------- */
 
 @media screen and (min-width: 280px) {
