@@ -84,14 +84,6 @@ hr {
 .icon {
   transition: transform 450ms;
 }
-.clickable:hover,
-.clickable:active {
-  transform: scale(1.1);
-  transition: transform 250ms;
-}
-.clickable {
-  transition: transform 450ms;
-}
 .button-container {
   display: flex;
   justify-content: flex-start;
@@ -149,8 +141,8 @@ h2 {
   line-height: 3rem;
 }
 h3 {
-  font-size: 1.7rem;
-  line-height: 2.5rem;
+  font-size: 2.3rem;
+  line-height: 2.7rem;
 }
 h4 {
   font-size: 1.1rem;
@@ -170,8 +162,8 @@ li {
 .subTitle {
   text-align: center;
 }
-.textDiv {
-  margin-bottom: 80px;
+.accentCopy {
+  opacity: 65%;
 }
 /* Email Marketing Page */
 #carouselOuterContainer {
@@ -226,9 +218,12 @@ li {
 .webFeatureCopy h3 {
 margin-bottom: 1rem;
 }
+.webFeatureCopy p {
+  margin-bottom: .75rem;
+  }
 .webFeatureImg {
   text-align: center;
-  border: 1px solid #333333;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   border-radius: 2%;
   width: 100%;
 }
@@ -326,6 +321,9 @@ margin-bottom: 1rem;
     "feature-hr1 feature-hr1"
     "webFeature2-img webFeature2-copy";
   }
+  .webFeatureCopy p {
+    margin-bottom: 0;
+    }
 }
 @media screen and (min-width: 855px) {
   .grid-container {
