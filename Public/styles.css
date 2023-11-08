@@ -63,6 +63,7 @@ hr {
   margin: 50px 0px;
   border: 0;
   padding: 2px;
+  width: 100%;
 }
 .hr-top {
   border-top: 1px solid;
@@ -73,8 +74,7 @@ hr {
   border-bottom: 1px solid;
 }
 .hr-center {
-  border-bottom: 3px solid;
-  width: 100%;
+  border-bottom: 2px solid;
 }
 .icon:hover,
 .icon:active {
@@ -197,7 +197,7 @@ li {
   display: grid;
   grid-template-rows: auto 1fr auto auto 1fr;
   grid-template-columns: 1fr;
-  gap: 10px;
+  column-gap: 10px;
   grid-template-areas:
     "webFeature1-copy"
     "webFeature1-img"
@@ -335,7 +335,7 @@ margin-bottom: 1rem;
       "header main"
       "header main"
       "header footer";
-    gap: 15px;
+    column-gap: 15px;
     padding: 0 20px;
   }
   #header {
