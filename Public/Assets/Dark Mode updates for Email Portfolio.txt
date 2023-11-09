@@ -1,0 +1,27 @@
+
+<link rel="stylesheet" href="emailSpecial.css" />
+
+
+
+<div><button onclick="darkModeToggle()">Toggle Dark Mode</button></div>
+
+
+On body element & id=“bodyTable”
+
+class="bgToggle"
+
+
+On all applicable copy
+class="copyToggle"
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="emailSpecial.js" charset="utf-8"></script>
+
+
+Modify width of this table to 700px (???)
+<!-- START EMAIL WRAPPER -->
+       <table class="resize800" width="800" border="0" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;margin: 0 auto;width: 800px;">
+
+
+***Note: running into issues with disclaimer links and nav bar underlines in Rocket Loans template emails. Search "underline_hover"
