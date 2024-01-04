@@ -155,11 +155,6 @@ h4 {
 li {
   padding: 5px;
 }
-#brk1,
-#brk2,
-#spc1 {
-  display: none;
-}
 .sectionTitle {
   text-align: center;
 }
@@ -252,40 +247,40 @@ margin-bottom: 1rem;
 
 /* --------------- Media Queries --------------- */
 
-@media screen and (min-width: 280px) {
+/* @media screen and (min-width: 280px) {
   #brk1,
   #brk2 {
     display: inline-block;
   }
-}
+} */
 @media screen and (min-width: 320px) {
-  h1 {
-    font-size: 1.1rem;
-    line-height: 1.7rem;
-  }
-}
-@media screen and (min-width: 340px) {
-  h1 {
-    font-size: 1.2rem;
-    line-height: 1.7rem;
-  }
-}
-@media screen and (min-width: 360px) {
   h1 {
     font-size: 1.3rem;
     line-height: 1.7rem;
   }
 }
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 340px) {
   h1 {
     font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+}
+@media screen and (min-width: 360px) {
+  h1 {
+    font-size: 1.5rem;
     line-height: 1.9rem;
+  }
+}
+@media screen and (min-width: 380px) {
+  h1 {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
   }
 }
 @media screen and (min-width: 400px) {
   h1 {
-    font-size: 1.6rem;
-    line-height: 2.1rem;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
   }
 }
 @media screen and (min-width: 440px) {
@@ -313,8 +308,8 @@ margin-bottom: 1rem;
 }
 @media screen and (min-width: 490px) {
   h1 {
-    font-size: 2rem;
-    line-height: 2.4rem;
+    font-size: 2.1rem;
+    line-height: 2.6rem;
   }
 }
 @media screen and (min-width: 600px) {
