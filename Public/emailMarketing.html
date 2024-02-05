@@ -15,13 +15,23 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- Glide Required Core stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <!-- Glide Optional Theme stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="grid-container">
       <header id="header">
-        <h4>Jordan Sweet</h4>
         <div class="link-container">
+          <a class="link" href="../index.html"><h4>Jordan&nbsp;Sweet</h4></a>
           <a href="https://github.com/JCSweet" target="_blank"
             ><img
               src="./Assets/Icons/github-mark/github-mark-white.svg"
@@ -51,8 +61,9 @@
         <hr class="hr-top" />
         <div>
           <p>
-            As an HTML Developer working for Rocket Companies, I worked side by
-            side with design teams to bring beautiful marketing emails to life.
+            As an Front-End Developer working for Rocket Companies, I worked
+            side by side with design teams to bring beautiful marketing emails
+            to life.
             <br /><br />
             Email service providers like Gmail and Outlook don't allow the use
             of tools like Flexbox or Bootstrap. This presents a unique challenge
@@ -64,125 +75,94 @@
             versions as well.
           </p>
         </div>
-        <hr />
-        <!-- Carousel  -->
-        <div id="carouselOuterContainer">
-          <div id="carouselSizeContainer">
-            <div id="carouselExampleIndicators" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="3"
-                  aria-label="Slide 4"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="4"
-                  aria-label="Slide 5"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a
-                    target="_blank"
-                    href="../Email-Marketing/email-money-topofwallet2.html"
-                    ><img
-                      src="Assets/email-screenshots/cropped/screenshot-money-topofwallet2_dark_cropped7x12.png"
-                      class="d-block w-100"
-                      alt="Rocket Money Lifecycle 'Mortgage Credits' email"
-                  /></a>
-                </div>
-                <div class="carousel-item">
-                  <a
-                    target="_blank"
-                    href="../Email-Marketing/email-money-lifecycleset1b.html"
-                    ><img
-                      src="Assets/email-screenshots/cropped/screenshot-money-lifecycleset1b_dark_cropped7x12.png"
-                      class="d-block w-100"
-                      alt="Rocket Money Lifecycle 'Benefits' email"
-                  /></a>
-                </div>
-                <div class="carousel-item">
-                  <a
-                    target="_blank"
-                    href="../Email-Marketing/email-loans-plvshel2ways.html"
-                    ><img
-                      src="Assets/email-screenshots/cropped/screenshot-loans-plvshel2ways_cropped700x1200.png"
-                      class="d-block w-100"
-                      alt="Rocket Loans / Mortgage Marketing 'Personal Loan vs HELOC' email"
-                  /></a>
-                </div>
-                <div class="carousel-item">
-                  <a
-                    target="_blank"
-                    href="../Email-Marketing/email-loans-multiproduct.html"
-                    ><img
-                      src="Assets/email-screenshots/cropped/screenshot-loans-multiproduct_cropped700x1200.png"
-                      class="d-block w-100"
-                      alt="Rocket Loans / Mortgage Marketing 'Debt Consolidation' email"
-                  /></a>
-                </div>
-                <div class="carousel-item">
-                  <a
-                    target="_blank"
-                    href="../Email-Marketing/email-solar-netmetering.html"
-                    ><img
-                      src="Assets/email-screenshots/cropped/screenshot-solar-netmetering_cropped700x1200.png"
-                      class="d-block w-100"
-                      alt="Rocket Solar Marketing 'Solar Credits' email"
-                  /></a>
+        <!-- <hr /> -->
+        <!-- Glide Carousel  -->
+        <div class="carouselOuterContainer">
+          <div class="carouselSizeContainer">
+            <div class="glide">
+              <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                  <div class="glide__slide">
+                    <a
+                      target="_blank"
+                      href="../Email-Marketing/email-money-topofwallet2.html"
+                      ><img
+                        src="Assets/email-screenshots/cropped/screenshot-money-topofwallet2_dark_cropped7x12.png"
+                        class="carousel_img"
+                        alt="Rocket Money Lifecycle 'Mortgage Credits' email"
+                    /></a>
+                  </div>
+                  <div class="glide__slide">
+                    <a
+                      target="_blank"
+                      href="../Email-Marketing/email-money-lifecycleset1b.html"
+                      ><img
+                        src="Assets/email-screenshots/cropped/screenshot-money-lifecycleset1b_dark_cropped7x12.png"
+                        class="carousel_img"
+                        alt="Rocket Money Lifecycle 'Benefits' email"
+                    /></a>
+                  </div>
+                  <div class="glide__slide">
+                    <a
+                      target="_blank"
+                      href="../Email-Marketing/email-loans-plvshel2ways.html"
+                      ><img
+                        src="Assets/email-screenshots/cropped/screenshot-loans-plvshel2ways_cropped700x1200.png"
+                        class="carousel_img"
+                        alt="Rocket Loans / Mortgage Marketing 'Personal Loan vs HELOC' email"
+                    /></a>
+                  </div>
+                  <div class="glide__slide">
+                    <a
+                      target="_blank"
+                      href="../Email-Marketing/email-loans-multiproduct.html"
+                      ><img
+                        src="Assets/email-screenshots/cropped/screenshot-loans-multiproduct_cropped700x1200.png"
+                        class="carousel_img"
+                        alt="Rocket Loans / Mortgage Marketing 'Debt Consolidation' email"
+                    /></a>
+                  </div>
+                  <div class="glide__slide">
+                    <a
+                      target="_blank"
+                      href="../Email-Marketing/email-solar-netmetering.html"
+                      ><img
+                        src="Assets/email-screenshots/cropped/screenshot-solar-netmetering_cropped700x1200.png"
+                        class="carousel_img"
+                        alt="Rocket Solar Marketing 'Solar Credits' email"
+                    /></a>
+                  </div>
                 </div>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <!-- Glide Controls -->
+              <div class="glide__arrows" data-glide-el="controls">
+                <button
+                  class="glide__arrow glide__arrow--left"
+                  data-glide-dir="<"
+                >
+                  <
+                </button>
+                <button
+                  class="glide__arrow glide__arrow--right"
+                  data-glide-dir=">"
+                >
+                  >
+                </button>
+              </div>
+              <!-- //Glide Controls -->
+              <!-- Glide Bullets -->
+              <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+                <button class="glide__bullet" data-glide-dir="=3"></button>
+                <button class="glide__bullet" data-glide-dir="=4"></button>
+              </div>
+              <!-- //Glide Bullets -->
             </div>
           </div>
         </div>
-        <!-- //Carousel  -->
+        <!-- //Glide Carousel  -->
         <hr class="hr-bottom" />
       </main>
       <footer id="footer">
@@ -229,5 +209,25 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="src/glide.js"></script> -->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <script>
+      const glideOptions = {
+        startAt: 1,
+        type: "carousel",
+        perView: 3,
+        gap: 2,
+        autoplay: 3000,
+        focusAt: "center",
+        breakpoints: {
+          700: {
+            perView: 1,
+            startAt: 0,
+          },
+        },
+      };
+      new Glide(".glide", glideOptions).mount();
+    </script>
   </body>
 </html>
